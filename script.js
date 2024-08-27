@@ -1,8 +1,8 @@
-function changeContent() {
+/* function changeContent() {
     document.getElementById("demo").innerHTML = "Hello JavaScript!";
     console.log("Content changed.");
     alert("Content changed."); // JavaScript üzerinde girdiğimiz tüm objeler varsayılan olarak window objesine eklenir. window.alert() ile alert() aynı işleve sahiptir.
-}
+} */
 
 
 /* Bazı notlar: 
@@ -28,5 +28,46 @@ function changeContent() {
 16- Bir sayı metin olarak yazılırsa (let x = "25" gibi) ardından gelen diğer sayılar otomatik olarak metin kabul edilir. let x = "5" + 2 + 3; işleminde sonuç "523" olur.
 17- $ ve _ işareti birer harf kabul edilir. Bu yüzden değişken isimlerinde kullanılabilirler. Örnek: let $ = 5;
 18- Genelde JS geliştiricileri alt-tire (_) kullanmazlar. Genellikle gizli değişkenlerde kullanılır. Tercih meselesi.
+19- JS'de Scope terimi bir değişkenin erişilebilirliğini belirtir. JS'de iki tür scope vardır: Global ve Block. Global Scope, fonksiyon dışında tanımlanan değişkenlerdir. Block Scope ise fonksiyon içinde tanımlanan değişkenlerdir.
+20- let ve var değişkenlerine aynı isimde bir değişken tanımlanamaz. İkisinden biri kullanılmalıdır: 
+
+var x = 2;   // Kullanılır.
+let x = 3;   // İptal edilir.
+
+let x = 2;   // Kullanılır.
+var x = 3;   // İptal edilir.
+
+21- Sadece var değişkeni, tanımlanmadan önce kullanılabilir:
+carName = "Volvo";
+var carName;
+
+22- let ve var değişkenleri oluşturulduğu zaman hemen değer atanmak zorunda değildir. Değer daha sonra da atanabilir. Ancak const ile oluşturulan değişkenlerin değeri oluşturulduğu anda atanmalıdır.
+Örnek:
+
+let x; değer atanmadan oluşturuldu.
+x = 5; sonradan değer atandı.
+
+const y = 6; değer atanarak oluşturuldu.
+
+23- var değişkeni this ile bağlanır.
+24- EN SON CONST'TA KALDIK W3 SCHOOLS'TA
+
+25- Patika'dan devam.
 
 */
+
+/* let number1 = "11";
+number1 = parseInt(number1);    // Straing ifadeyi Integer'a (tam sayıya) çevirir.
+console.log(number1, typeof(number1));
+let number2 = "11px";  
+number2 = parseInt(number2);   // Sayıyla karışık string ifadeyi tam sayıya çevirir.
+console.log(number2, typeof(number2));
+let number3 = "11.1";
+number3 = Number(number3);  // String olarak yazılmış tam sayı ve ondalıklı sayıları sayısal ifadeye çevirir. (Harfle karışık olanları çevirmez.)
+console.log(number3, typeof(number3));
+let number4 = "11.4px";     // Harfle karışışık String ifadeyi ondalıklı (float) değere çevirir.
+number4 = parseFloat(number4);
+console.log(number4, typeof(number4));
+let number5 = 55;
+number5 = number5.toString();   // Sayısal bir ifadeyi String bir ifadeye çevirir.
+console.log(number5, typeof(number5)); */
